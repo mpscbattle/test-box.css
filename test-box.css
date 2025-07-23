@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0px;
+}
+
+.quiz-box, .report-card, .analysis-card {
+  max-width: 100%;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer {
+  background-color: #00b386;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.startBtn {
+  background-color: #00b386;
+  color: white;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border: none;
+}
+
+.onlineTestBtn {
+  background-color: #b34700;
+  color: white;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.quiz-stats-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* NEW: Perfect circle for question number */
+.question-number {
+  font-weight: bold;
+  font-size: 10px; /* Keep font size as per your original CSS */
+  color: white; /* Text color is white */
+  background-color: #000099; 
+  display: flex; /* Use flexbox for perfect centering */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  width: 32px; /* Fixed width for the circle */
+  height: 32px; /* Fixed height, must be equal to width for a perfect circle */
+  border-radius: 50%; /* Makes it a perfect circle */
+  box-sizing: border-box; /* Include padding/border in total width/height */
+  flex-shrink: 0; /* Prevent it from shrinking */
+  margin-bottom: 12px;
+  margin-bottom: 13px;
+}
+
+.solved-count {
+    font-weight: bold;
+    font-size: 10px;
+    color: #000;
+    background-color: #f2f2f2;
+    display: inline-block;
+    padding: 1px 4px;
+    border-radius: 5px;
+    margin-top: 10px; /* Separates it from the navigation buttons */
+    /* If you want it right-aligned with question number, you'd need to put them in a common flex container */
+}
+
+.question {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.options .option {
+  font-size: 15px;
+  padding: 8px;
+  margin: 10px 0; /* Ensures space between options */
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.option.selected {
+  background-color: #ffcc66 !important;
+}
+
+.option.correct {
+  background-color: #00cc66;
+  color: white;
+}
+
+.option.wrong {
+  background-color: #ff3333;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #2e2eb8;
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin: 15px auto;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-black {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  display: block;
+  margin: 10px auto 0;
+  margin-bottom: 15px;
+  padding: 3px 7px;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.report-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.result-message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #009999;
+  margin-top: 10px;
+}
+
+.analysis-box {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 6px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.analysis-box .option {
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 8px;
+}
+
+.feedback {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.correct-feedback {
+  background-color: #79d2a6;
+  color: white;
+}
+
+.wrong-feedback {
+  background-color: #ff8080;
+  color: white;
+}
+
+.not-attempted-feedback {
+  background-color: #66d9ff;
+  color: white;
+}
+
+.explanation-box { /* New style for explanation */
+  background-color: #e6e6ff; /* Light blue background */
+  border: 1px solid #9999ff; /* Blue border */
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333366; /* Darker blue text */
+  font-weight: normal;
+}
