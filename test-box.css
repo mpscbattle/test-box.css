@@ -28,6 +28,10 @@ body {
   font-size: 14px;
   margin-bottom: 15px;
   margin-top: 15px;
+  /* Added to make size consistent with startBtn */
+  min-width: 90px; /* Adjust this value as needed */
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding is included in the total width */
 }
 .startBtn {
   background-color: #00b386;
@@ -40,23 +44,30 @@ body {
   float: right;
   margin-bottom: 15px;
   margin-top: 15px;
+  border: none;
+  /* Added to make size consistent with timer */
+  min-width: 90px; /* Adjust this value as needed, matching .timer */
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding is included in the total width */
 }
-
-/* NEW: Style for the new Online Test Series button */
 .onlineTestBtn {
-  background-color: orange; /* Orange background */
-  color: white; /* White text */
-  display: inline-block; /* Aligned with timer/start button */
-  padding: 3px 6px; /* Same padding as startBtn for consistency */
+  background-color: #b34700;
+  color: white;
+  display: inline-block;
+  padding: 3px 6px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
-  float: right; /* Align to the right, just like startBtn */
+  float: right;
   margin-bottom: 15px;
   margin-top: 15px;
   cursor: pointer;
+  border: none;
+  /* Add min-width for consistency if this button will replace startBtn */
+  min-width: 90px; /* Adjust this value as needed */
+  text-align: center;
+  box-sizing: border-box;
 }
-
 .quiz-stats-row {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -182,7 +193,7 @@ body {
   margin-top: 10px;
   margin-bottom: 13px;
   padding: 3px;
-  border-radius: 5px;
+  border-radius: 0px;
   text-align: center;
 }
 .correct-feedback {
@@ -200,11 +211,10 @@ body {
 .explanation-box {
   /* New style for explanation */
   background-color: #e6e6ff; /* Light blue background */
-  border: 1px solid #9999ff; /* Blue border */
   padding: 8px;
   margin-top: 10px;
-  border-radius: 5px;
-  font-size: 14px;
+  border-radius: 0px;
+  font-size: 15px;
   color: #333366; /* Darker blue text */
   font-weight: normal;
 }
