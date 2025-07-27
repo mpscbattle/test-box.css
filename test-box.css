@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
-  font-family: 'Poppins', sans-serif !important;
-}
 
 body {
-  font-family: 'Poppins', sans-serif;
   background-color: #f0f0f0;
   margin: 0;
   padding: 0px;
@@ -89,17 +84,7 @@ body {
   margin-bottom: 13px;
 }
 
-.solved-count {
-    font-weight: bold;
-    font-size: 10px;
-    color: #000;
-    background-color: #f2f2f2;
-    display: inline-block;
-    padding: 1px 4px;
-    border-radius: 5px;
-    margin-top: 10px; /* Separates it from the navigation buttons */
-    /* If you want it right-aligned with question number, you'd need to put them in a common flex container */
-}
+
 
 .question {
   font-size: 17px;
