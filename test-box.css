@@ -142,15 +142,7 @@ body {
   background-color: #6c757d;
   color: white;
 }
-.btn-black {
-  font-weight: bold;
-  background-color: black;
-  color: white;
-  display: block;
-  margin: 10px auto 0;
-  margin-bottom: 15px;
-  padding: 3px 7px;
-}
+
 .report-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
